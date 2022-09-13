@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/logo.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+        />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.svg" />
+        
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        
+        <style>
+
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+            h1, h2, h3 , h4  img,  body, div {font-family: "OpenSans-Regular", "Open Sans SemiBold", "Open Sans"}
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                margin: 0;
+            }
+        </style>
+        <script>
+            window.onUsersnapCXLoad = function (api) {
+                api.init();
+            };
+            var script = document.createElement("script");
+            script.defer = 1;
+            script.src =
+                "https://widget.usersnap.com/global/load/dce07a33-82f4-4d11-89d3-e49380072f58?onload=onUsersnapCXLoad";
+            document.getElementsByTagName("head")[0].appendChild(script);
+        </script>
+        <title>PEC Cuenta</title>
+    </head>
+
+    <body style="margin: 0">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div
+            id="root"
+            style="
+                background-color: #f0f0f0;
+                font-family: OpenSans-Bold, Open Sans Bold, Open Sans,
+                    sans-serif;
+            "
+        ></div>
+    </body>
+</html>

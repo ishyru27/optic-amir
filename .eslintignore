@@ -1,0 +1,7 @@
+node_modules/**
+public/
+client/dist/
+/node_modules/
+/src/_mocks_
+jest.config.ts
+reportWebVitals.ts

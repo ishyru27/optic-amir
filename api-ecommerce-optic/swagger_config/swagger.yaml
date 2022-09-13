@@ -1,0 +1,51 @@
+swagger: "2.0"
+info:
+  title: Api-Account-Bonification
+  description: Api to bonifications
+  version: 1.0.0
+  contact:
+    email: lucho@gmail.com
+  servers:
+    -url: http://localhost:8080
+    description: THis is my local Server
+
+#Return Users From get request
+paths:
+  /account-bonification/account/{accountId}:
+    get:
+      summary: Returns a list of discounts for this account.
+      description: Row/s with description, discount value and validity
+      operationId: account
+      produces:
+        - application/json
+      parameters:
+        - name: accountId
+          in: path
+          description: AccountId to be find values
+          required: true
+          type: number
+          example: '858901507'
+      responses:
+        '200':
+          description: A user object. 
+          schema:
+            type: object
+            properties:
+              APR_PRM_ID:
+                type: string
+                example: "MCO400"
+              PRM_WEB_DESCRIPTION:
+                type: string
+                example: "Bonificación Multiservicio x 12 meses"
+              DESCRIPTION:
+                type: string
+                example: "MCO400 - Bon Multiservicio"
+              DISCOUNT:
+                type: number
+                example: 400
+              STARTDATE:
+                type: string
+                example: "26/03/2022"
+              ENDDATE: 
+                type: string
+                example: "03/10/2022"
